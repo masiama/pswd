@@ -1,3 +1,4 @@
+use arboard::Clipboard;
 use clap::Parser;
 
 const DEFAULT_LENGTH: usize = 32;
@@ -29,6 +30,10 @@ fn main() {
                 .nth(fastrand::usize(0..charset.len()))
                 .unwrap(),
         );
+    }
+
+    if let Ok(mut clipboard) = Clipboard::new() {
+        let _ = clipboard.set_text(&result);
     }
     println!("{}", result);
 }

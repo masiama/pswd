@@ -1,6 +1,6 @@
 # pswd
 
-A minimal, fast CLI password generator written in Rust.
+A minimal, fast CLI password generator written in Rust. Generated passwords are automatically copied to the clipboard.
 
 ## Usage
 
