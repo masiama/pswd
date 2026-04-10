@@ -15,6 +15,8 @@ struct Cli {
 }
 
 fn main() {
+    human_panic::setup_panic!();
+
     let cli = Cli::parse();
     let mut charset = CHARSERT.to_string();
 

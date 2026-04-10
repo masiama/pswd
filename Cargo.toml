@@ -1,6 +1,6 @@
 [package]
 name = "pswd"
-version = "0.2.0"
+version = "0.2.1"
 edition = "2024"
 authors = ["Leonid Cupikov <leonid.cupikov@gmail.com>"]
 license = "MIT"
@@ -16,6 +16,7 @@ exclude = [".github", ".gitignore"]
 arboard = "3.6.1"
 clap = { version = "4.6.0", features = ["derive"] }
 fastrand = "2.4.1"
+human-panic = "2.0.8"
 
 [dev-dependencies]
 assert_cmd = "2.2.0"
