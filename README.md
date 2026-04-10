@@ -36,12 +36,18 @@ pswd 64 --exclude-special
 
 ## Character Sets
 
-| Mode                | Characters                                 |
-| ------------------- | ------------------------------------------ | -------- |
-| Default             | `A-Z`, `a-z`, `0-9`, `!@#$%^&\*()\_+-=[]{} | ;:,.<>?` |
-| `--exclude-special` | `A-Z`, `a-z`, `0-9`                        |
+| Mode                | Characters                                         |
+| ------------------- | -------------------------------------------------- |
+| Default             | `A-Z`, `a-z`, `0-9`, `!@#$%^&*()_+-=[]{}\|;:,.<>?` |
+| `--exclude-special` | `A-Z`, `a-z`, `0-9`                                |
 
 ## Installation
+
+### From crates.io
+
+```bash
+cargo install pswd
+```
 
 ### From source
 
