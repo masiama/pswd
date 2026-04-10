@@ -19,6 +19,7 @@ pswd [OPTIONS] [LENGTH]
 | Flag                      | Description                                              |
 | ------------------------- | -------------------------------------------------------- |
 | `-e`, `--exclude-special` | Use only alphanumeric characters (no special characters) |
+| `-n`, `--no-copy`         | Print the password without copying to clipboard          |
 | `-h`, `--help`            | Print help                                               |
 
 ## Examples
@@ -32,6 +33,9 @@ pswd 16
 
 # Generate a 64-character password without special characters
 pswd 64 --exclude-special
+
+# Generate a password without copying to clipboard
+pswd --no-copy
 ```
 
 ## Character Sets

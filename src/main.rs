@@ -12,6 +12,9 @@ struct Cli {
 
     #[arg(short, long)]
     exclude_special: bool,
+
+    #[arg(short, long)]
+    no_copy: bool,
 }
 
 fn main() {
@@ -34,8 +37,11 @@ fn main() {
         );
     }
 
-    if let Ok(mut clipboard) = Clipboard::new() {
-        let _ = clipboard.set_text(&result);
+    if !cli.no_copy {
+        if let Ok(mut clipboard) = Clipboard::new() {
+            let _ = clipboard.set_text(&result);
+        }
     }
+
     println!("{}", result);
 }
