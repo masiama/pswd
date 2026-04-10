@@ -1,0 +1,21 @@
+[package]
+name = "pswd"
+version = "0.1.0"
+edition = "2024"
+authors = ["Leonid Cupikov <leonid.cupikov@gmail.com>"]
+license = "MIT"
+description = "CLI tool to generate random passwords, with an optional alphanumeric-only flag"
+readme = "README.md"
+homepage = "https://github.com/masiama/pswd"
+repository = "https://github.com/masiama/pswd"
+keywords = ["cli", "password", "generator", "security", "random"]
+categories = ["command-line-utilities"]
+exclude = [".github", ".gitignore"]
+
+[dependencies]
+clap = { version = "4.6.0", features = ["derive"] }
+fastrand = "2.4.1"
+
+[dev-dependencies]
+assert_cmd = "2.2.0"
+predicates = "3.1.4"
